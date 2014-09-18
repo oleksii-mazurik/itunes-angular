@@ -1,0 +1,53 @@
+<div>
+    <h3>Songs</h3>
+    <div ng-show="results.length > 0">
+        <table class="table table-hover songs-table" id="myTable">
+            <thead>
+            <tr>
+                <td>#</td>
+                <td>Name</td>
+                <td></td>
+                <td>Artist</td>
+                <td>Album</td>
+                <td>Time</td>
+                <td>Price</td>
+                <td>Preview</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="song in filteredResults" class="animated fadeInDown">
+                <td>
+                    <span>{{ (currentPage - 1)*15 + $index + 1 }}</span>
+                </td>
+                <td>
+                    <img ng-src="{{ song.artworkUrl30 }}">
+                </td>
+                <td>
+                    <a href="{{ song.trackViewUrl }}"><span>{{ song.trackName }}</span></a>
+                </td>
+                <td>
+                    <span>{{ song.artistName }}</span>
+                </td>
+                <td>
+                    <span>{{ song.collectionName }}</span>
+                </td>
+                <td>
+                    <span>{{ song.trackTimeMillis | timeFilter }}</span>
+                </td>
+                <td>
+                    <span>{{ song.currency }}</span><span> </span><span>{{ song.trackPrice }}</span>
+                </td>
+                <td>
+                    <a href="{{ song.previewUrl }}">Listen</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+    <div ng-show="results.length == 0">
+        <h4>No results</h4>
+    </div>
+</div>

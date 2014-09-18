@@ -1,0 +1,91 @@
+body {
+    padding: 20px;
+    margin: 20px;
+
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.mediaLink {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+.btn .badge {
+    left: 7px;
+    top: 3px;
+}
+
+.about {
+    margin-top: -15px;
+}
+
+.trackName {
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.mediaItemMovie {
+    width: 140px;
+    height: 210px;
+    border-radius: 2px;
+}
+
+#preload {
+    text-align: center;
+}
+
+.additionalSettings .in {
+    box-shadow: 3px 3px 3px rgba(74, 74, 74, 0.50);
+}
+
+.LongString {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-info {
+    font-size: 11px;
+}
+
+.specialForm {
+
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+
+.mediaItemImg {
+    width: 200px;
+    height: 235px;
+    margin: 0;
+    padding: 0;
+}
+
+.mediaItemImg .panel-body {
+    padding: 0;
+}
+
+.mediaItemImg .LongString {
+    font-size: 13px;
+}
+
+.mediaItem {
+    width: 150px;
+}
+
+.mediaItem:hover {
+    box-shadow: 7px 7px 5px 0 rgba(50, 50, 50, 0.28);
+}
+
+.mediaMusicVideo {
+    width: 200px;
+}
+
+.additionalSettings {
+    position: absolute;
+    z-index: 1000;
+}

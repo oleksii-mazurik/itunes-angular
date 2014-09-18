@@ -1,0 +1,25 @@
+<div id="podcast">
+
+    <h3>Podcasts</h3>
+
+    <ul class="list-inline" ng-show="results.length > 0">
+        <li ng-repeat="result in filteredResults" class="animated fadeInDown">
+            <div class="mediaItem">
+                <img ng-src="{{ result.artworkUrl100 }}" />
+                <a href="{{ result.trackViewUrl }}" class="mediaLink">
+                    <div class="LongString">
+                        <span class="trackName">Name: <span>{{ result.trackName }}</span></span>
+                    </div>
+                    <div class="LongString">
+                        <i><span class="trackName">Author: <span>{{ result.artistName }}</span></span></i>
+                    </div>
+                </a>
+            </div>
+        </li>
+    </ul>
+
+    <div ng-show="results.length == 0">
+        <h4>No results</h4>
+    </div>
+
+</div>
